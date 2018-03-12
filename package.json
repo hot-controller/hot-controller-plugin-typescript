@@ -9,18 +9,21 @@
   },
   "repository": {
     "type": "git",
-    "url":
-      "git+https://github.com/hot-controller/hot-controller-plugin-typescript.git"
+    "url": "git+https://github.com/hot-controller/hot-controller-plugin-typescript.git"
   },
-  "keywords": ["hot-controller", "controller", "typescript", "ts", "express"],
+  "keywords": [
+    "hot-controller",
+    "controller",
+    "typescript",
+    "ts",
+    "express"
+  ],
   "author": "Philip Oliver <philipodev@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url":
-      "https://github.com/hot-controller/hot-controller-plugin-typescript/issues"
+    "url": "https://github.com/hot-controller/hot-controller-plugin-typescript/issues"
   },
-  "homepage":
-    "https://github.com/hot-controller/hot-controller-plugin-typescript#readme",
+  "homepage": "https://github.com/hot-controller/hot-controller-plugin-typescript#readme",
   "dependencies": {
     "ts-loader": "^4.0.1",
     "typescript": "^2.7.2"
@@ -31,6 +34,7 @@
   "devDependencies": {
     "babel-eslint": "^8.2.2",
     "eslint": "^4.18.2",
+    "eslint-plugin-jest": "^21.14.0",
     "jest": "^22.4.2",
     "promise-events": "^0.1.4"
   }

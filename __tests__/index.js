@@ -5,22 +5,26 @@ const path = require('path');
 let config;
 
 describe('Modifies webpack config', () => {
-  beforeAll(async () => {
-    config = {
-      // imitates webpack config
-      resolveLoader: {
-        modules: []
-      },
-      module: {
-        rules: []
-      }
-    };
+  beforeAll(
+    () =>
+      new Promise(resolve => {
+        config = {
+          // mock webpack config
+          resolveLoader: {
+            modules: []
+          },
+          module: {
+            rules: []
+          }
+        };
 
-    let events = new EventEmitter();
-    plugin(events);
-    await events.emit('webpack-config', config);
-  });
-  test('adds module.rules', async () => {
+        let events = new EventEmitter();
+        plugin(events);
+        events.emit('webpack-config', config).then(() => resolve());
+      })
+  );
+
+  test('adds module.rules', () => {
     expect(config.module.rules.length).toBe(1);
     expect(config.module.rules[0].loader).toBe('ts-loader');
   });
