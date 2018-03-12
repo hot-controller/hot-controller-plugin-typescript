@@ -25,12 +25,12 @@ describe('Modifies webpack config', () => {
   );
 
   test('adds module.rules', () => {
-    expect(config.module.rules.length).toBe(1);
+    expect(config.module.rules).toHaveLength(1);
     expect(config.module.rules[0].loader).toBe('ts-loader');
   });
 
   test('adds plugins node_modules to resolveLoader', () => {
-    expect(config.resolveLoader.modules.length).toBe(1);
+    expect(config.resolveLoader.modules).toHaveLength(1);
     expect(config.resolveLoader.modules[0]).toBe(
       path.resolve(__dirname, '../node_modules')
     );
