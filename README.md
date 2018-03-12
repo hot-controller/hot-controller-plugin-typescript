@@ -22,4 +22,4 @@ In your `.controllerrc.json`
 }
 ```
 
-## [Example](https://github.com/hot-controller/hot-controller-plugin-typescript/hot-controller/tree/master/example)
+## [Example](https://github.com/hot-controller/hot-controller-plugin-typescript/tree/master/example)
