@@ -1,0 +1,16 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "hot-controller"
+  },
+  "dependencies": {
+    "hot-controller": "^1.0.0",
+    "hot-controller-plugin-typescript": "^1.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
