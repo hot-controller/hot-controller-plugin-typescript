@@ -1,31 +1,27 @@
 {
   "name": "hot-controller-plugin-typescript",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Typescipt plugin for hot-controller",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint index.js",
-    "test": "jest"
+    "lint": "eslint index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hot-controller/hot-controller-plugin-typescript.git"
+    "url":
+      "git+https://github.com/hot-controller/hot-controller-plugin-typescript.git"
   },
-  "keywords": [
-    "hot-controller",
-    "controller",
-    "typescript",
-    "ts",
-    "express"
-  ],
+  "keywords": ["hot-controller", "controller", "typescript", "ts", "express"],
   "author": "Philip Oliver <philipodev@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hot-controller/hot-controller-plugin-typescript/issues"
+    "url":
+      "https://github.com/hot-controller/hot-controller-plugin-typescript/issues"
   },
-  "homepage": "https://github.com/hot-controller/hot-controller-plugin-typescript#readme",
+  "homepage":
+    "https://github.com/hot-controller/hot-controller-plugin-typescript#readme",
   "dependencies": {
-    "ts-loader": "^4.0.1",
+    "ts-node": "^5.0.1",
     "typescript": "^2.7.2"
   },
   "peerDependencies": {
